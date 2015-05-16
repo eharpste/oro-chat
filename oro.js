@@ -3,7 +3,7 @@ if (Meteor.isClient) {
   var orovideo = new OroVideoPeer();
   orovideo.run();
 
-  Template.call.events({
+  Template.callpeer.events({
     'click .callaction' : function(e, t) {
       e.preventDefault();
       var key = t.find('.callkey').value;
